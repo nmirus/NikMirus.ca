@@ -1,0 +1,22 @@
+{
+  "name": "gatsby-theme-workspace",
+  "private": true,
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:inline-video": "yarn workspace croustille-inline-video build",
+    "build:site": "yarn workspace site build",
+    "build": "yarn run build:inline-video && yarn run build:site",
+    "start": "yarn workspace site start"
+  },
+  "workspaces": [
+    "gatsby-theme-catastrophe",
+    "croustille-inline-video",
+    "site"
+  ],
+  "dependencies": {
+    "gatsby-plugin-env-variables": "^1.0.1",
+    "gatsby-plugin-netlify": "^2.1.17"
+  }
+}

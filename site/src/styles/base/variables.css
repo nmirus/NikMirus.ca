@@ -1,0 +1,12 @@
+:root {
+  --base-spacing: 1rem;
+  --small-spacing: 0.5rem;
+  --large-spacing: 2rem;
+
+  --site-spacing: 1rem;
+  --site-y-spacing: 1rem;
+  --site-x-spacing: 1.25rem;
+  --site-mobile-spacing: 0.25rem;
+
+  --button-disabled-transition: opacity 650ms ease-out;
+}

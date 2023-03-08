@@ -1,0 +1,19 @@
+.Intro {
+  @apply fixed inset-0 w-screen h-screen z-50;
+}
+
+.Intro-Overlay {
+  @apply absolute bg-white inset-0 w-screen h-screen;
+  /* @apply opacity-90; */
+  cursor: pointer;
+  transition: opacity 350ms ease-in-out 200ms;
+  opacity: 1;
+}
+
+.Intro-Overlay.Close {
+  opacity: 0;
+}
+
+.Intro-Title {
+  @apply absolute left-0 right-0 my-4 mx-5 text-base max-w-paragraph;
+}

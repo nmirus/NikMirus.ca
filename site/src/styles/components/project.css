@@ -1,0 +1,54 @@
+.ProjectImage.landscape {
+  width: 80vmin;
+  /* width: 80vmin; */
+}
+
+@screen md {
+  .ProjectImage.landscape {
+    width: 95vmin;
+    /* width: 80vmin; */
+  }
+}
+
+.ProjectImage.square,
+.ProjectImage.portrait {
+  width: 60vmin;
+  /* width: 55vmin; */
+}
+
+.ProjectNavWrapper {
+  transition: var(--button-disabled-transition);
+  opacity: 1;
+}
+
+@screen md {
+  body[data-arrows-disabled] .ProjectNavWrapper {
+    opacity: 0.1;
+  }
+}
+
+.ProjectNav {
+  @apply fixed flex items-center px-3;
+  /* margin-right: var(--site-spacing); */
+  /* width: calc(theme("spacing.5") * 4 + theme("spacing.4")); */
+  width: 50vw;
+  height: 100vh;
+  top: 0;
+  z-index: 0;
+}
+
+@screen md {
+  .ProjectNav {
+    @apply px-5;
+  }
+}
+
+.ProjectNav-Next {
+  right: 0;
+  @apply justify-end;
+}
+
+.ProjectNav-Prev {
+  left: 0;
+  @apply justify-start;
+}

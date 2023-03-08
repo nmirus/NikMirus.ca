@@ -1,0 +1,9 @@
+.featured-thumbnail {
+  transition: opacity 350ms ease-in-out, filter 350ms ease-in-out;
+  opacity: 1;
+}
+
+.featured-thumbnail[disabled] {
+  filter: grayscale(100%);
+  opacity: 0.1;
+}

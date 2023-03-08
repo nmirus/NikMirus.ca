@@ -1,0 +1,25 @@
+{
+  "name": "croustille-inline-video",
+  "version": "1.0.0",
+  "description": "Create inline video that loop, autoplay and is muted. To be used in similar way to an image or an animated gif.",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm ./index.js && babel src/index.js --out-file ./index.js"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}

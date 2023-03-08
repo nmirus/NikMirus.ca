@@ -1,0 +1,101 @@
+.ReactModal__Content {
+  @apply min-h-screen w-full h-screen p-4 absolute top-0 left-0 overflow-x-hidden overflow-y-auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ReactModal__Content.ContentInfo,
+.ReactModal__Content.ContentIndex {
+  @apply border-black border;
+  /* position: relative; */
+}
+
+/* .ReactModal__Content.ContentIndex::after,
+.ReactModal__Content.ContentInfo::after {
+  content: "";
+  height: 2px;
+  background: black;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(1rem + var(--site-spacing) * 2);
+} */
+
+.ReactModal__Overlay {
+  @apply fixed inset-0 overflow-x-hidden;
+}
+
+.ReactModal__Overlay.OverlayIntro {
+  @apply bg-transparent;
+}
+
+.ReactModal__Overlay.OverlayInfo,
+.ReactModal__Overlay.OverlayIndex {
+  @apply bg-white;
+}
+
+/* Index */
+
+.ReactModal__Overlay.OverlayIndex {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 350ms cubic-bezier(0.1, 0.4, 0.6, 0.9),
+    opacity 250ms ease-in-out 100ms;
+  /* transition: opacity 250ms ease-in-out 100ms; */
+}
+
+.ReactModal__Overlay--after-open.OverlayIndex {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close.OverlayIndex {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* Info */
+
+/* .ReactModal__Content.ContentInfo {
+  @apply overflow-y-hidden;
+} */
+
+@screen md {
+  .ReactModal__Content.ContentInfo {
+    @apply overflow-y-hidden;
+  }
+}
+
+.ReactModal__Overlay.OverlayInfo {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 350ms cubic-bezier(0.1, 0.4, 0.6, 0.9),
+    opacity 250ms ease-in-out 100ms;
+  /* transition: opacity 250ms ease-in-out 100ms; */
+}
+
+.ReactModal__Overlay--after-open.OverlayInfo {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close.OverlayInfo {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+/* Project Intro */
+
+.ReactModal__Overlay.OverlayIntro {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open.OverlayIntro {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close.OverlayIntro {
+  opacity: 0;
+}

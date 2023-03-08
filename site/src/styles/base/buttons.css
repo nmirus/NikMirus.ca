@@ -1,0 +1,12 @@
+button {
+  appearance: none;
+  color: inherit;
+  font-size: 1em;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+button:focus {
+  outline: 0;
+}

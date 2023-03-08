@@ -1,0 +1,15 @@
+.header {
+  @apply fixed top-0 left-0 z-50 my-4 mx-5 pointer-events-none uppercase leading-none w-1/2;
+  overflow-y: hidden;
+}
+
+.header h1 {
+  display: inline-block;
+}
+
+@screen md {
+  .header {
+    @apply w-auto;
+    height: 1rem;
+  }
+}

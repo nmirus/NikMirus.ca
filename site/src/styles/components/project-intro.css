@@ -1,0 +1,49 @@
+.ProjectIntro {
+  @apply fixed inset-0 w-screen h-screen z-50;
+}
+
+.ProjectIntro-Overlay {
+  @apply absolute bg-white inset-0 w-screen h-screen;
+  /* @apply opacity-90; */
+  cursor: pointer;
+  transition: var(--button-disabled-transition);
+  opacity: 0.9;
+}
+
+.ProjectIntro-Overlay.Close {
+  opacity: 0;
+}
+
+.ProjectIntro-Button {
+  @apply absolute right-0 flex justify-center items-center;
+  /* margin-right: var(--site-spacing); */
+  width: calc(theme("spacing.4") * 2 + theme("spacing.3"));
+  height: calc(theme("spacing.4") * 2 + theme("spacing.3"));
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@screen md {
+  .ProjectIntro-Button {
+    width: calc(theme("spacing.5") * 2 + theme("spacing.4"));
+    height: calc(theme("spacing.5") * 2 + theme("spacing.4"));
+  }
+
+  .ProjectIntro-Title {
+    @apply text-4xl;
+  }
+
+  body[data-counter-disabled] .ProjectCounter {
+    opacity: 0.1;
+  }
+}
+
+.ProjectIntro-Title {
+  @apply absolute left-0 right-0 pl-4 pt-2 text-3xl max-w-paragraph leading-none;
+}
+
+.ProjectCounter {
+  @apply fixed bottom-0 left-0 ml-32 p-4 text-sm;
+  transition: opacity 350ms ease-in-out;
+  opacity: 1;
+}

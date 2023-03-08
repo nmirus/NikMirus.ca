@@ -1,0 +1,64 @@
+::-moz-selection {
+  background: black;
+  color: white;
+}
+
+::selection {
+  background: black;
+  color: white;
+}
+
+html {
+  @apply font-sans font-light;
+  font-size: responsive 16px 32px;
+  font-range: 640px 1280px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 100%;
+  @apply leading-tight;
+}
+
+html,
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply m-0 mb-2 font-sans text-base;
+}
+
+p {
+  @apply m-0 mb-2;
+}
+
+figure {
+  @apply m-0;
+}
+
+img,
+picture {
+  @apply m-0;
+  max-width: 100%;
+}
+
+a {
+  text-decoration-color: #000;
+  text-decoration-thickness: 0.025em;
+  text-underline-offset: 0.1em;
+  text-decoration: none;
+}
+
+a:active,
+a:focus,
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,64 @@
+html[carnet],
+html[carnet] body {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carnet {
+  position: relative;
+  width: 100%;
+}
+
+.carnet__panels {
+  @apply flex flex-row flex-wrap items-start;
+  margin-right: calc(-1 * var(--smaller-spacing));
+  margin-left: calc(-1 * var(--smaller-spacing));
+}
+
+.carnet__left {
+  width: 50%;
+  padding-right: calc(var(--site-mobile-spacing) / 2);
+}
+
+.carnet__right {
+  position: sticky;
+  align-self: flex-start;
+  top: 0;
+  width: 50%;
+  overflow: hidden;
+  height: calc(var(--vh, 1vh) * 100);
+  padding-left: calc(var(--site-mobile-spacing) / 2);
+}
+
+@screen sm {
+  .carnet__left {
+    padding-right: calc(var(--site-spacing) / 2);
+  }
+
+  .carnet__right {
+    padding-left: calc(var(--site-spacing) / 2);
+  }
+}
+
+.carnet__footer {
+  width: 100%;
+}
+
+.carnet-left,
+.carnet-right {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+.carnet-left {
+  padding: 15vmin 0 var(--site-spacing);
+}
+
+.carnet-right {
+  padding: 0 0 var(--site-spacing) 0;
+}

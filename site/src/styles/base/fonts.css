@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Ginto';
+  src: url('../fonts/Ginto Normal Light/GintoNormal-Light.woff2') format('woff2'), url('../fonts/Ginto Normal Light/GintoNormal-Light.woff') format('woff'), url('../fonts/Ginto Normal Light/GintoNormal-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ginto';
+  src: url('../fonts/Ginto Normal Light Italic/GintoNormal-LightIta.woff2') format('woff2'), url('../fonts/Ginto Normal Light Italic/GintoNormal-LightIta.woff') format('woff'), url('../fonts/Ginto Normal Light Italic/GintoNormal-LightIta.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('../fonts/Founders Grotesk/founders-grotesk-web-regular.woff2') format('woff2'), url('../fonts/Founders Grotesk/founders-grotesk-web-regular.woff') format('woff'), url('../fonts/Founders Grotesk/founders-grotesk-web-regular.eot') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+

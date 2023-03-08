@@ -1,0 +1,29 @@
+{
+  "name": "gatsby-theme-catastrophe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "patrickvezina <patrick@croustille.io> (@ptrckvzn)",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.6.0"
+  },
+  "dependencies": {
+    "gatsby-image": "^2.2.8",
+    "gatsby-plugin-google-analytics": "^2.1.6",
+    "gatsby-plugin-postcss": "^2.1.2",
+    "gatsby-plugin-react-helmet": "^3.1.2",
+    "gatsby-plugin-sharp": "^2.2.9",
+    "gatsby-source-contentful": "^2.1.17",
+    "gatsby-source-filesystem": "^2.1.8",
+    "gatsby-transformer-sharp": "^2.2.5",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "rucksack-css": "^1.0.2",
+    "sanitize.css": "^11.0.0",
+    "tailwindcss": "^1.0.6"
+  }
+}

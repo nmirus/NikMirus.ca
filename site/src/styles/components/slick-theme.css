@@ -1,0 +1,118 @@
+@charset 'UTF-8';
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+
+  position: absolute;
+  top: 50%;
+  z-index: 0;
+
+  display: block;
+
+  /* width: calc(theme("spacing.5") * 4 + theme("spacing.4")); */
+  width: 50vw;
+  height: 100vh;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+
+  cursor: pointer;
+
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  transition: var(--button-disabled-transition);
+  opacity: 1;
+
+  pointer-events: auto;
+}
+
+@screen md {
+  body[data-arrows-disabled] .slick-prev,
+  body[data-arrows-disabled] .slick-next {
+    opacity: 0.1;
+  }
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  @apply opacity-100;
+}
+
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
+  visibility: hidden;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  @apply opacity-0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  @apply inline-block opacity-100 text-white;
+  width: theme("spacing.5");
+  height: theme("spacing.5");
+  transition: opacity 350ms ease-in-out;
+  position: absolute;
+  background-size: contain;
+  /* @apply border border-debug; */
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-prev:before {
+  content: "";
+  left: theme("spacing.3");
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../images/arrow-left.svg");
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-next:before {
+  content: "";
+  right: theme("spacing.3");
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../images/arrow-right.svg");
+}
+
+@screen md {
+  .slick-prev:before,
+  .slick-next:before {
+    width: theme("spacing.4");
+    height: theme("spacing.4");
+  }
+  .slick-prev:before {
+    left: theme("spacing.5");
+  }
+  .slick-next:before {
+    right: theme("spacing.5");
+  }
+}

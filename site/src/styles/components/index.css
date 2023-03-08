@@ -1,0 +1,16 @@
+.index-button {
+  @apply fixed right-0 top-0 pointer-events-auto leading-none inline-block z-40;
+  transition: var(--button-disabled-transition);
+  opacity: 1;
+}
+
+.index-button button {
+  height: calc(1rem / theme("lineHeight.none"));
+  @apply py-5 px-5;
+}
+
+@screen md {
+  body[data-index-disabled] .index-button {
+    opacity: 0.2;
+  }
+}

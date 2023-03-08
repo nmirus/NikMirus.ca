@@ -1,0 +1,50 @@
+{
+  "name": "site",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "@contentful/rich-text-react-renderer": "^13.4.0",
+    "@contentful/rich-text-types": "^13.4.0",
+    "classnames": "^2.2.6",
+    "croustille-inline-video": "./croustille-inline-video",
+    "dotenv": "^8.0.0",
+    "gatsby": "^2.13.3",
+    "gatsby-plugin-manifest": "^2.2.1",
+    "gatsby-plugin-netlify": "^2.1.10",
+    "gatsby-plugin-netlify-cache": "^1.2.0",
+    "gatsby-plugin-offline": "^2.2.1",
+    "gatsby-plugin-preact": "^3.1.2",
+    "gatsby-theme-catastrophe": "*",
+    "lodash": "^4.17.15",
+    "netlify-cli": "^2.15.0",
+    "preact": "^8.4.2",
+    "react-modal": "^3.9.1",
+    "react-slick": "^0.25.2",
+    "react-transition-group": "^4.2.2",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

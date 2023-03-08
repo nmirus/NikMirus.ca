@@ -1,0 +1,20 @@
+html,
+body {
+  @apply bg-off-white;
+}
+
+main {
+  padding-left: var(--site-mobile-spacing);
+  padding-right: var(--site-mobile-spacing);
+  padding-top: calc(var(--site-mobile-spacing) * 3);
+  min-height: 100vh;
+  position: relative;
+}
+
+@screen sm {
+  main {
+    padding-left: var(--site-spacing);
+    padding-right: var(--site-spacing);
+    /* padding-top: calc(var(--site-spacing) * 3); */
+  }
+}

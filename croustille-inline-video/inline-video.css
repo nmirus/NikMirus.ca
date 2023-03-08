@@ -1,0 +1,33 @@
+.InlineVideo {
+  position: relative;
+  z-index: 100;
+  background: #000;
+}
+
+.InlineVideo-Video {
+  width: 100%;
+  height: auto;
+  z-index: 75;
+}
+
+.InlineVideo-Button {
+  z-index: 125;
+  border-top: 1em solid transparent;
+  border-bottom: 1em solid transparent;
+  border-left: 1.5em solid rgba(255, 255, 255, 0.5);
+  width: 0;
+  height: 0;
+  color: #fff;
+  padding: 0;
+  text-indent: -99999px;
+  line-height: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.InlineVideo-Button:hover {
+  background: transparent;
+  opacity: 0.1;
+}
