@@ -16,6 +16,7 @@
     "gatsby-plugin-netlify-cache": "^1.2.0",
     "gatsby-plugin-offline": "^2.2.1",
     "gatsby-plugin-preact": "^3.1.2",
+    "gatsby-theme-catastrophe": "*",
     "lodash": "^4.17.15",
     "netlify-cli": "^2.15.0",
     "preact": "^8.4.2",
