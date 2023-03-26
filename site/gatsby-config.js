@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: `gatsby-theme-catastrophe`,
       options: {
-        //gaTrackingId: "",
+        gaTrackingId: "sadfasdfasdf",
         contentful: {
           spaceId: process.env.CONTENTFUL_SPACE_ID,
           accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
